@@ -1,4 +1,4 @@
-package com.citrus.aboutcitrus.Helpers;
+package com.fred.aboutus.Helpers;
 
 import android.support.annotation.IntDef;
 

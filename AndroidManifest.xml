@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.citrus.aboutcitrus">
+    package="com.fred.aboutus">
 
     <application
         android:allowBackup="true"

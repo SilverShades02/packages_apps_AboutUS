@@ -1,4 +1,4 @@
-package com.citrus.aboutcitrus;
+package com.fred.aboutus;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,8 +23,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.joaquimley.faboptions.FabOptions;
-
 public class MainActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
@@ -46,54 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-        FabOptions fabOptions = findViewById(R.id.fab_options);
-        fabOptions.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.faboptions_gplus: {
-                        Snackbar.make(view, "Opening Citrus Google+ Community", Snackbar.LENGTH_LONG).show();
-                        Intent intent = new Intent();
-                        intent.setAction(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse(getString(R.string.citrus_url)));
-                        startActivity(intent);
-                        break;
-                    }
-                    case R.id.faboptions_tg: {
-                        Snackbar.make(view, "Opening Telegram Channel for Citrus-CAF", Snackbar.LENGTH_LONG).show();
-                        Intent intent = new Intent();
-                        intent.setAction(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse(getString(R.string.citrus_channel)));
-                        startActivity(intent);
-                        break;
-                    }
-                    case R.id.faboptions_git: {
-                        Snackbar.make(view, "Opening Citrus Source Github", Snackbar.LENGTH_LONG).show();
-                        Intent intent = new Intent();
-                        intent.setAction(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse(getString(R.string.citrus_github)));
-                        startActivity(intent);
-                        break;
-                    }
-                    case R.id.faboptions_log: {
-                        boolean appPresent = appCheck("com.pluscubed.matlog");
-
-                        if (appPresent) {
-                            Snackbar.make(view, "Opening Logcat Reader", Snackbar.LENGTH_LONG).show();
-                            Intent intent = new Intent("com.pluscubed.logcat.intents.LAUNCH");
-                            startActivity(intent);
-                        } else {
-                            Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-                            i.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.pluscubed.matlog"));
-                            startActivity(i);
-                        }
-
-                    }
-                    default:
-                }
-            }
-        });
 
     }
 

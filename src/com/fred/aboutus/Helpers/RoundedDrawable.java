@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.citrus.aboutcitrus.Helpers;
+package com.fred.aboutus.Helpers;
 
 import android.content.res.ColorStateList;
 import android.graphics.Bitmap;

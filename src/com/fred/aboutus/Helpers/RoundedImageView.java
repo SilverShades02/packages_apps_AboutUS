@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.citrus.aboutcitrus.Helpers;
+package com.fred.aboutus.Helpers;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -34,7 +34,7 @@ import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.citrus.aboutcitrus.R;
+import com.fred.aboutus.R;
 
 @SuppressWarnings("UnusedDeclaration")
 public class RoundedImageView extends ImageView {

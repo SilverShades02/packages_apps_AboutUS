@@ -1,4 +1,4 @@
-package com.citrus.aboutcitrus;
+package com.fred.aboutus;
 
 import android.content.Context;
 import android.content.Intent;
